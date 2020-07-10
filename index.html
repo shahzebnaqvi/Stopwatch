@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>StopWatch</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+
+    <style>
+        body{background-color: black;}
+        h1{color:rgb(195, 7, 63); }
+.main{text-align: center;}
+.circle{height: 200px;
+    width: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    letter-spacing: 3px;
+    font-size: 2rem;
+    margin: 0px auto;
+    border-radius: 50%;
+    background: rgb(195, 7, 63);
+    margin-bottom: 20px;
+    color: white;}
+  li{color: white;background-color: rgb(195, 7, 63);list-style: none;font-size: 20px;}
+  .btn{background-color: rgb(195, 7, 63); color: white;outline: none;}
+   
+   #lap_list{margin-top: 10px;margin-bottom: 10px;} </style>
+</head>
+
+<body>
+    <div class="container main">
+        <H1>Stop Watch</H1>
+        <div class="circle"><h4><span id="min">00</span>:<span id="sec">00</span>:<span id="msec">00</span></h4></div>
+        <button class="btn" onclick="Start_btn()">
+            Start
+        </button>
+        <button class="btn" onclick="Stop_btn()">
+            Stop
+        </button>
+        <button class="btn" onclick="Reset_btn()">
+            Reset
+        </button>
+        <button  class="btn" onclick="lap_btn()">
+            Lap
+        </button>
+        <div id="lap_list">
+            <ul>
+
+            </ul>
+        </div>
+        <button  class="btn" onclick="clb()">
+            Blue
+        </button>
+        <button  class="btn" onclick="clg()">
+            Green
+        </button>
+        <button  class="btn" onclick="clgy()">
+            Grey
+        </button>
+        <button  class="btn" onclick="clp()">
+            Purple
+        </button>
+        <button  class="btn" onclick="cly()">
+            Yellow
+        </button>
+        <footer style="color: white;"><h3>Developed by Shahzeb</h3></footer>
+    </div>
+
+
+
+
+    <script src='app.js'></script>
+</body>
+
+</html>
