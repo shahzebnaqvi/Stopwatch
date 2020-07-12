@@ -27,7 +27,7 @@ function timer() {
 
 Start_btn = () => {
     if (!interval) {
-        interval = setInterval(timer, 100)
+        interval = setInterval(timer, 10)
     }
 }
 
@@ -41,6 +41,9 @@ Reset_btn = () => {
     minsp.innerHTML = '00';
     secsp.innerHTML = '00';
     msecsp.innerHTML = '00';
+    msec = 0;
+    sec = 0;
+    min = 0;
     Stop_btn();
     id =0;
     laplist.innerHTML="<ul></ul>";
